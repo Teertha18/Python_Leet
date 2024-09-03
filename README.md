@@ -21,7 +21,7 @@ Hi there! I’m **Teertha**, a Data Engineer who loves using Python to build eff
 ## 📣 Let's Connect
 
 - **Email:** [teerthacr@gmail.com](mailto:teerthacr@gmail.com)
-- **LinkedIn:** [teerthcr](https://www.linkedin.com/in/teerthcr)
+- **LinkedIn:** [Teerth Prasad CR](https://www.linkedin.com/in/teerthcr)
 
 Thanks for stopping by! 🚀
 
