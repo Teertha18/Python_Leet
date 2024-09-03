@@ -29,6 +29,7 @@
 # merged: a p b q c   d
 
 class Solution(object):
+    #  My code 
     def mergeAlternately(self, word1, word2):
         """
         :type word1: str
@@ -54,12 +55,38 @@ class Solution(object):
                 
 
         return value
+    
+    def otherMergeAlternately(self, word1: str, word2: str) -> str:
+        # Initialize pointers for both words
+        i, j = 0, 0
+        result = []
+        
+        # Iterate while both pointers are within bounds
+        while i < len(word1) and j < len(word2):
+            result.append(word1[i])
+            result.append(word2[j])
+            i += 1
+            j += 1
+        
+        # Append remaining characters of word1, if any
+        if i < len(word1):
+            result.extend(word1[i:])
+        
+        # Append remaining characters of word2, if any
+        if j < len(word2):
+            result.extend(word2[j:])
+        
+        # Join the result list into a string and return
+        return ''.join(result)
 
 if __name__ == "__main__":
     S = Solution()
-    s1 = S.mergeAlternately("abc","pqr")
-    print(s1)
-    s2 = S.mergeAlternately("ab","pqrs")
-    print(s2)
-    s3 = S.mergeAlternately("abcdefghr","pqrs")
-    print(s3)
+    l = [("abc","pqr"),("ab","pqrs"),("abcdefghr","pqrs")]
+
+    for data in l:
+        print(S.mergeAlternately(data[0],data[1]))
+
+    for data in l:
+        print(S.otherMergeAlternately(data[0],data[1]))
+
+    
